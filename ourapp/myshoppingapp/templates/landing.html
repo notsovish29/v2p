@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html>
+{% load static %}
+<html lang="en">
 <head>
-    <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Shop</title>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <h1>Welcome to v2pp Shop</h1>
-    <a href="/cart">Go to Shop</a>
+
+    <header>
+        <h1>Welcome to Our Online Shop!</h1>
+    </header>
+
+    <div class="main-content">
+        <div class="intro">
+            <h2>Your one-stop shop for amazing products!</h2>
+            <p>Explore our wide selection of products and enjoy an easy shopping experience.</p>
+            <a href="{% url 'shop' %}" class="shop-button">Start Shopping</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 v2p | All Rights Reserved</p>
+    </footer>
+
+    <script src="{% static 'scripts.js' %}"></script>
 </body>
 </html>

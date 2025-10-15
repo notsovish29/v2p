@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def landing(request):
     return render(request, 'landing.html')
+
+def shop_page(request):
+    return render(request, 'shop_page.html')
